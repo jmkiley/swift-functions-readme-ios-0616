@@ -28,10 +28,15 @@ func sayHelloToCat(catName: String) {
     print("Hello, \(catName), why do you sleep so much?")
 }
 
+func sayHelloToCatAndAskWithVerb(catName catName: String, verb: String) {
+    print("Hello, \(catName), why do you \(verb) so much?")
+}
+
+sayHelloToCatAndAskWithVerb(catName: "Jon", verb: "eat")
 sayHelloToCat("Mittens")
 
 let catFriend = "Socks"
 sayHelloToCat(catFriend)
 
 // Uncomment this line to see the error that is printed in the console.
-//sayHelloToCat()
+sayHelloToCat("Whiskers")
